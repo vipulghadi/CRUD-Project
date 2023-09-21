@@ -1,0 +1,10 @@
+{% extends 'enroll/base.html' %} {% block content %}
+<div class="row d-flex justify-content-center">
+    <div class="col-sm-12">
+        <form method="POST">
+            {% csrf_token %} {{fm}}
+            <button type="submit " class="btn btn-success mt-5 ">save</button> <button class=" btn btn-warning mt-5 "><a href="/ ">Back to Home</a></button></form>
+    </div>
+</div>
+
+{% endblock %}
